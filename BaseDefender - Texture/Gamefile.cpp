@@ -1,9 +1,11 @@
-#include "Gamefile.h"
+#include"Gamefile.h"
+SDL_Texture* botTexture;
+SDL_Rect srcR, desR;
 Game::Game()
 {}
 Game::~Game()
 {}
-void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen)
+void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen) //Ham tao cua so game
 {
 	int flags = 0;
 	if (fullscreen) {
@@ -22,12 +24,17 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			cout << "Renderer created" << endl;
 		}
 		isRunning = true;
+		SDL_Surface* textSurface = IMG_Load("asset/batmodel.png");
+		botTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
+		SDL_FreeSurface(textSurface);
 	}
 	else {
 		isRunning = false;
 	}
+	
 }
-void Game::handleEvents()
+
+void Game::handleEvents() // xu li input
 {
 	SDL_Event event;
 	SDL_PollEvent(&event);
@@ -39,15 +46,20 @@ void Game::handleEvents()
 		break;
 	}
 }
-void Game::render()
+void Game::render() //Render model
 {
 	SDL_RenderClear(renderer); //Them vao render
+	SDL_RenderCopy(renderer, botTexture, NULL, &desR);
 	SDL_RenderPresent(renderer);
 }
-void Game::update()
+void Game::update()//...
 {
 	cnt++;
-	cout << cnt;
+	desR.h = 64; // Edit chieu cao
+	desR.w = 32;// edit chieu rong 
+	desR.x = cnt; // di chuyen theo truc x
+	//desR.y = cnt; di chuyen theo truc y
+	cout << cnt << endl;//auto di chuyen
 }
 void Game::clean()
 {

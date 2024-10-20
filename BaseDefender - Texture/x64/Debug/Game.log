@@ -1,3 +1,5 @@
-﻿  main.cpp
-D:\GameCT\GameChienThuat\Gamefile.h(1,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Game.vcxproj -> D:\GameCT\GameChienThuat\x64\Debug\Game.exe
+﻿  Gamefile.cpp
+D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.h(1,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(66,2): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(67,2): warning C4551: function call missing argument list
+  Game.vcxproj -> D:\GameCT\GameCT\BaseDefender - Texture\x64\Debug\Game.exe

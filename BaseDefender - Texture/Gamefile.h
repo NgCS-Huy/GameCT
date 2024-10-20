@@ -1,7 +1,8 @@
-#ifndef Gamefile.h
-#include <SDL.h>
+#ifndef Gamefile.h //Khoi tao cac ham chinnh
+#include<SDL.h>
 #include <stdio.h>
 #include <iostream>
+#include<SDL_image.h>
 using namespace std;
 class Game {
 public:
