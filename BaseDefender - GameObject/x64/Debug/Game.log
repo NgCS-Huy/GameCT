@@ -1,0 +1,6 @@
+﻿  Gamefile.cpp
+D:\GameCT\GameCT\BaseDefender - GameObject\Gamefile.h(2,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\GameCT\GameCT\BaseDefender - GameObject\Gamefile.cpp(44,3): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - GameObject\Gamefile.cpp(63,2): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - GameObject\Gamefile.cpp(64,2): warning C4551: function call missing argument list
+  Game.vcxproj -> D:\GameCT\GameCT\BaseDefender - GameObject\x64\Debug\Game.exe

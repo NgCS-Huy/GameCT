@@ -1,8 +1,6 @@
 ﻿  Gamefile.cpp
 D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.h(2,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(43,3): warning C4551: function call missing argument list
-D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(67,2): warning C4551: function call missing argument list
-D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(68,2): warning C4551: function call missing argument list
-  Tuluan.cpp
-D:\GameCT\GameCT\BaseDefender - Texture\Tuluan.cpp(4,21): error C2062: type 'int' unexpected
-  Generating Code...
+D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(41,3): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(58,2): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - Texture\Gamefile.cpp(59,2): warning C4551: function call missing argument list
+  Game.vcxproj -> D:\GameCT\GameCT\BaseDefender - Texture\x64\Debug\Game.exe

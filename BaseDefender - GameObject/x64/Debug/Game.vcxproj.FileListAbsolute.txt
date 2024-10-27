@@ -1,0 +1,3 @@
+D:\GameCT\GameChienThuat\x64\Debug\Game.exe
+D:\GameCT\GameCT\BaseDefender - Texture\x64\Debug\Game.exe
+D:\GameCT\GameCT\BaseDefender - GameObject\x64\Debug\Game.exe

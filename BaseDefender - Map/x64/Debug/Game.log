@@ -1,0 +1,8 @@
+﻿  Map.cpp
+D:\GameCT\GameCT\BaseDefender - Map\Gamefile.h(2,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\GameCT\GameCT\BaseDefender - Map\Map.cpp(37,2): error C2065: 'xpos': undeclared identifier
+D:\GameCT\GameCT\BaseDefender - Map\Map.cpp(37,7): error C2065: 'ypos': undeclared identifier
+D:\GameCT\GameCT\BaseDefender - Map\Map.cpp(55,4): error C2065: 'des': undeclared identifier
+D:\GameCT\GameCT\BaseDefender - Map\Map.cpp(56,4): error C2065: 'des': undeclared identifier
+D:\GameCT\GameCT\BaseDefender - Map\Map.cpp(60,33): error C2065: 'src': undeclared identifier
+D:\GameCT\GameCT\BaseDefender - Map\Map.cpp(60,38): error C2065: 'des': undeclared identifier
