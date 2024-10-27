@@ -1,4 +1,5 @@
 #include"Gamefile.h"
+#include"TextureManager.h"
 SDL_Texture* botTexture;
 SDL_Rect srcR, desR;
 Game::Game()
@@ -23,11 +24,10 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 			cout << "Renderer created" << endl;
 		}
-		isRunning = true;
-		SDL_Surface* textSurface = IMG_Load("asset/batmodel.png");
-		botTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
-		SDL_FreeSurface(textSurface);
+		isRunning = true;	
+		botTexture = TextureManager::LoadTexture("asset/batmodel.png", renderer);
 	}
+	
 	else {
 		isRunning = false;
 	}
@@ -40,6 +40,7 @@ void Game::handleEvents() // xu li input
 	SDL_PollEvent(&event);
 	switch (event.type) {
 	case SDL_QUIT:
+		SDL_DestroyTexture;
 		isRunning = false;
 		break;
 	default:
@@ -68,3 +69,4 @@ void Game::clean()
 	SDL_Quit();
 	cout << "Game cleanned!";
 }
+
