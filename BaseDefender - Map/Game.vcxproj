@@ -148,6 +148,7 @@
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ESC.h" />
     <ClInclude Include="Gamefile.h" />
     <ClInclude Include="G_object.h" />
     <ClInclude Include="Map.h" />
