@@ -1,0 +1,10 @@
+﻿  Gamefile.cpp
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.h(2,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\GameCT\GameCT\BaseDefender - Main\TransformComponent.h(20,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\GameCT\GameCT\BaseDefender - Main\TransformComponent.h(21,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(51,35): warning C4145: '==': relational expression as switch expression; possible confusion with '='
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(53,3): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(52,2): warning C4808: case '27' is not a valid value for switch condition of type 'bool'
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(75,2): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(76,2): warning C4551: function call missing argument list
+  Game.vcxproj -> D:\GameCT\GameCT\BaseDefender - Main\x64\Debug\Game.exe
