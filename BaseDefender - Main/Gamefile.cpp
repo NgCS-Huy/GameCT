@@ -4,11 +4,20 @@
 #include"ECS.h"
 #include"Components.h"
 #include"Vector.h"
+#include"Collision.h"
+#include<iostream>
+using namespace std;
 SDL_Renderer*Game:: renderer=nullptr;
 SDL_Event Game::event;
 Map* map;
 Manager manager;
-auto& champion(manager.addEntity());
+
+std::vector<ColliderComponent*>Game::colliders;
+
+auto& player(manager.addEntity());
+auto& wall(manager.addEntity());
+
+
 Game::Game()
 {}
 Game::~Game()
@@ -38,15 +47,22 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 	
 	}
 	map = new Map();
-	champion.addComponent<TransformComponent>();
-	champion.addComponent<SpriteComponent>("asset/ArcherIcon.png");  
-	champion.addComponent<Controller>();
+	
+
+	player.addComponent<TransformComponent>(2);
+	player.addComponent<SpriteComponent>("asset/ArcherIcon.png");  
+	player.addComponent<Controller>();
+	player.addComponent<ColliderComponent>("player");
+
+	wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
+	wall.addComponent<SpriteComponent>("asset/water.png");
+	wall.addComponent<ColliderComponent>("wall");
 }
 
 
 void Game::handleEvents() // xu li input
 {
-	champion.addComponent<Controller>();
+	player.addComponent<Controller>();
 	SDL_PollEvent(&event);
 	switch (event.type) {
 	case SDL_QUIT:
@@ -60,7 +76,6 @@ void Game::handleEvents() // xu li input
 void Game::render() //Render model
 {
 	SDL_RenderClear(renderer); //Them vao render
-	map->DrawMap();
 	manager.draw();
 	SDL_RenderPresent(renderer);
 }
@@ -68,7 +83,10 @@ void Game::update()//...
 {
 	manager.refresh();
 	manager.update();
-	
+	for (auto cc : colliders)
+	{
+		Collision::AABB(player.getComponent<ColliderComponent>(), *cc);
+	}
 }
 void Game::clean()
 {
@@ -78,3 +96,8 @@ void Game::clean()
 	cout << "Game cleanned!";
 }
 
+void Game::AddTile(int id, int x, int y)
+{
+	auto& tile(manager.addEntity());
+	tile.addComponent<TileComponent>(x, y, 32, 32, id);
+}

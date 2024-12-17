@@ -1,10 +1,12 @@
 #pragma once
 #ifndef Gamefile.h //Khoi tao cac ham chinnh
+
 #include<SDL.h>
-#include <stdio.h>
 #include <iostream>
 #include<SDL_image.h>
+#include<vector>
 using namespace std;
+class ColliderComponent; 
 class Game {
 public:
 	Game();
@@ -16,8 +18,10 @@ public:
 	void render();
 	void clean();
 	bool running() { return isRunning; }
+	static void AddTile(int id, int x, int y);
 	static SDL_Renderer* renderer;
 	static SDL_Event event;
+	static std::vector<ColliderComponent*> colliders;
 private:
 	int cnt = 0;
 	bool isRunning;

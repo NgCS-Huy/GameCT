@@ -16,45 +16,39 @@
     <Filter Include="Source Files\asset">
       <UniqueIdentifier>{4b74b89b-cd34-4132-83af-74ec0d0630e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Cpp files">
+      <UniqueIdentifier>{0638f851-daa4-4e9b-8852-1bba779f457b}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\ECS">
       <UniqueIdentifier>{0161fc63-8594-46d0-841b-fda580fcd9c8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="G_objectcpp.cpp">
+      <Filter>Source Files\Cpp files</Filter>
     </ClCompile>
     <ClCompile Include="Gamefile.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Cpp files</Filter>
     </ClCompile>
-    <ClCompile Include="TextureManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="G_objectcpp.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Cpp files</Filter>
     </ClCompile>
     <ClCompile Include="Map.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Cpp files</Filter>
     </ClCompile>
     <ClCompile Include="Vector2Dcpp.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Cpp files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Cpp files</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files\Cpp files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Gamefile.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureManager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Object.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="G_object.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Map.h">
-      <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Components.h">
       <Filter>Source Files\ECS</Filter>
@@ -68,13 +62,31 @@
     <ClInclude Include="SpriteComponent.h">
       <Filter>Source Files\ECS</Filter>
     </ClInclude>
-    <ClInclude Include="Vector.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="ColliderComponent.h">
+      <Filter>Source Files\ECS</Filter>
     </ClInclude>
     <ClInclude Include="Controller.h">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\ECS</Filter>
     </ClInclude>
-    <ClInclude Include="ColliderComponent.h">
+    <ClInclude Include="G_object.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamefile.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="TileComponent.h">
       <Filter>Source Files\ECS</Filter>
     </ClInclude>
   </ItemGroup>
