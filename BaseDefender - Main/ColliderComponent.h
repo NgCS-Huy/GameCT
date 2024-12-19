@@ -1,9 +1,10 @@
 #pragma once
-#include "string"
+#include"string"
 #include"SDL.h"
-#include "Components.h"
+#include"Components.h"
+#include"ECS.h"
 
-class ColliderComponent :public Component
+class ColliderComponent:public Component
 {
 public:
 	SDL_Rect collider;
@@ -29,7 +30,7 @@ public:
 	{
 		collider.x = static_cast<int>(transform->position.x);
 		collider.y = static_cast<int>(transform->position.y);
-		collider.w = transform->width*transform->scale;
-		collider.h = transform->height*transform->scale;
+		collider.w = transform->width * transform->scale;
+		collider.h = transform->height * transform->scale;
 	}
- };
+};

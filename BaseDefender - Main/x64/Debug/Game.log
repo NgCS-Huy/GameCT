@@ -1,6 +1,9 @@
-﻿  Gamefile.cpp
+﻿  Collision.cpp
 D:\GameCT\GameCT\BaseDefender - Main\Gamefile.h(2,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(75,3): warning C4551: function call missing argument list
-D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(101,2): warning C4551: function call missing argument list
-D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(102,2): warning C4551: function call missing argument list
+  Gamefile.cpp
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.h(2,1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(80,3): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(117,2): warning C4551: function call missing argument list
+D:\GameCT\GameCT\BaseDefender - Main\Gamefile.cpp(118,2): warning C4551: function call missing argument list
+  Generating Code...
   Game.vcxproj -> D:\GameCT\GameCT\BaseDefender - Main\x64\Debug\Game.exe

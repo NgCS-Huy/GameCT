@@ -1,8 +1,8 @@
 #pragma once
 #include<SDL.h>
-
-
-class ColliderComponent;
+#include"ECS.h"
+#include"ColliderComponent.h"
+#include"Vector.h"
 
 class Collision
 {

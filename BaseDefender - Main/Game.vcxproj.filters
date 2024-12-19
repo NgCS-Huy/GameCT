@@ -45,6 +45,9 @@
     <ClCompile Include="Collision.cpp">
       <Filter>Source Files\Cpp files</Filter>
     </ClCompile>
+    <ClCompile Include="ECS.cpp">
+      <Filter>Source Files\Cpp files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Object.h">
@@ -89,6 +92,9 @@
     <ClInclude Include="TileComponent.h">
       <Filter>Source Files\ECS</Filter>
     </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="zlib1.dll">
@@ -103,6 +109,21 @@
     <None Include="libpng16-16.dll">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="asset\tilemap.map">
+      <Filter>Source Files\asset</Filter>
+    </None>
+    <None Include="asset\tileMap32x32.map">
+      <Filter>Source Files\asset</Filter>
+    </None>
+    <None Include="asset\Untitled.map">
+      <Filter>Source Files\asset</Filter>
+    </None>
+    <None Include="asset\pyxel.map">
+      <Filter>Source Files\asset</Filter>
+    </None>
+    <None Include="asset\map.map">
+      <Filter>Source Files\asset</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="asset\grass.png">
@@ -115,6 +136,27 @@
       <Filter>Source Files\asset</Filter>
     </Image>
     <Image Include="asset\ArcherIcon.png">
+      <Filter>Source Files\asset</Filter>
+    </Image>
+    <Image Include="asset\Idle.png">
+      <Filter>Source Files\asset</Filter>
+    </Image>
+    <Image Include="asset\Walk.png">
+      <Filter>Source Files\asset</Filter>
+    </Image>
+    <Image Include="asset\terrain_ss.png">
+      <Filter>Source Files\asset</Filter>
+    </Image>
+    <Image Include="asset\Animations.png">
+      <Filter>Source Files\asset</Filter>
+    </Image>
+    <Image Include="asset\player_anims.png">
+      <Filter>Source Files\asset</Filter>
+    </Image>
+    <Image Include="asset\CharacterAnimations.png">
+      <Filter>Source Files\asset</Filter>
+    </Image>
+    <Image Include="asset\Soldier.png">
       <Filter>Source Files\asset</Filter>
     </Image>
   </ItemGroup>

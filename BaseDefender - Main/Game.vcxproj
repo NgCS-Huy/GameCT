@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="ECS.cpp" />
     <ClCompile Include="Gamefile.cpp" />
     <ClCompile Include="G_objectcpp.cpp" />
     <ClCompile Include="main.cpp" />
@@ -150,6 +151,7 @@
     <ClCompile Include="Vector2Dcpp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="ColliderComponent.h" />
     <ClInclude Include="Collision.h" />
     <ClInclude Include="Components.h" />
@@ -166,15 +168,27 @@
     <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="asset\map.map" />
+    <None Include="asset\pyxel.map" />
+    <None Include="asset\tilemap.map" />
+    <None Include="asset\tileMap32x32.map" />
+    <None Include="asset\Untitled.map" />
     <None Include="libpng16-16.dll" />
     <None Include="SDL2.dll" />
     <None Include="SDL2_image.dll" />
     <None Include="zlib1.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="asset\Animations.png" />
     <Image Include="asset\ArcherIcon.png" />
+    <Image Include="asset\CharacterAnimations.png" />
     <Image Include="asset\dirt.png" />
     <Image Include="asset\grass.png" />
+    <Image Include="asset\Idle.png" />
+    <Image Include="asset\player_anims.png" />
+    <Image Include="asset\Soldier.png" />
+    <Image Include="asset\terrain_ss.png" />
+    <Image Include="asset\Walk.png" />
     <Image Include="asset\water.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

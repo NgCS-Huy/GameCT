@@ -1,52 +1,36 @@
 #pragma once
 
 #include"ECS.h"
-#include"TransformComponent.h"
 #include<SDL.h>
-#include"SpriteComponent.h"
-#include"Components.h"
 
 class TileComponent :public Component
 {
 public:
-	TransformComponent* transform;
-	SpriteComponent* sprite;
-	SDL_Rect tileRect;
-	int tileID;
 
-	const char* path;
-
+	SDL_Texture* texture;
+	SDL_Rect srcRect, desRect;
 
 	TileComponent() = default;
-	TileComponent(int x, int y, int w, int h, int id)
+	~TileComponent()
 	{
-		tileRect.x = x;
-		tileRect.y = y;
-		tileRect.w = w;
-		tileRect.h = h;
-		tileID = id;
+		SDL_DestroyTexture(texture);
+	}
+	TileComponent(int srcX, int srcY, int xpos, int ypos, const char* path)
+	{
+		texture = TextureManager::LoadTexture(path);
 
-		switch (tileID)
-		{
-		case 0:
-			path = "assets/water.png";
-				break;
-		case 1:
-			path = "asset/dirt.png";
-				break;
-		case 2:
-			path = "asset/grass.png";
-			break;
-		default:
-			break;
-		}
+		srcRect.x = srcX;
+		srcRect.y = srcY;
+		srcRect.w = srcRect.h = 32;
+
+		desRect.x = xpos;
+		desRect.y = ypos;
+		desRect.w = desRect.h = 64;
+
 	}
-	void init() override
+	void draw() override
 	{
-		entity->addComponent<TransformComponent>((float)tileRect.x,(float)tileRect.y, tileRect.w, tileRect.h, 1);
-		transform = &entity->getComponent<TransformComponent>();
-		
-		entity->addComponent<SpriteComponent>(path);
-		sprite = &entity->getComponent<SpriteComponent>();
+		TextureManager::Draw(texture, srcRect, desRect, SDL_FLIP_NONE);
 	}
+private:
 };
